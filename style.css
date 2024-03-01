@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+}
+
+.left-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: center;
+    font-size: 8px;
+    margin-left: 180px;
+    color: #000000;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.left-side h2:hover {
+    border-bottom: 2px solid transparent;
+    position: relative;
+}
+
+.left-side h2:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+
+.right-side h2:hover {
+    border-bottom: 2px solid transparent;
+    position: relative;
+}
+
+.right-side h2:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: center;
+    font-size: 8px;
+    margin-right: 180px;
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    width: 202%; 
+    transition: transform 0.9s ease; 
+}
+
+.slide1 {
+    transform: translateX(100%);
+}
+
+.slide2 {
+    transform: translateX(-100%);
+}
+
+.text-overlay {
+    position: absolute;
+    left: 11%;
+    top: 35%;
+}
+
+.text-overlay1 {
+    position: absolute;
+    left: 11%;
+    top: 30%;
+}
+
+.ai {
+    font-size: 32px;
+}
+
+.explore {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.btn, .btn1 {
+    position: absolute;
+    left: 0%;
+    top: 120%;
+    width: 190px;
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background: #0067b8;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover, .btn1:hover {
+    background: #00599c;
+}
+
+.carusel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+span {
+    cursor: pointer;
+}
+
+.offers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 60px;
+}
+
+.offer{
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: underline;
+    color: #006dc0;
+    cursor: pointer;
+}
+
+.offer-img1{
+    position: relative;
+    left: 35%;
+    width: 40px;
+    height: 40px;
+}
+
+.offer-img2{
+    position: relative;
+    left: 40%;
+    width: 40px;
+    height: 40px;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;
+    margin-top: 100px;
+}
+
+.item {
+    max-width: 380px; 
+}
+
+.item-info-h2{
+    font-size: 27px;
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+.item-info-h2-2{
+    font-size: 27px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.new{
+    background-color: #ffb900;
+    margin-top: 15px;
+    width: 55px;
+    height: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.item-info-p{
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.item-info-btn{
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #006dc0;
+    cursor: pointer;
+}
+
+.item-info-btn:hover{
+    text-decoration: underline;
+}
+
+.item-info-btn-4 {
+    display: inline-block; 
+    margin-right: 70px; 
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #006dc0;
+    cursor: pointer;
+}
+
+.item-info-btn-4:hover{
+    text-decoration: underline;
+}
+
+.controllers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    position: relative; 
+}
+
+.controller {
+    display: block;
+    max-width: 100%; 
+}
+
+.wireless{
+    font-size: 32px;
+}
+
+.design{
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.text-overlay3 {
+    position: absolute; 
+    top: 35%; 
+    left: 16%; 
+}
+
+.btn2 {
+    width: 190px;
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background: #0067b8;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn2:hover {
+    background: #00599c;
+}
+
+.for-business {
+   margin-top: 120px;
+   margin-left: 160px;
+   font-size: 32px;
+}
+
+.business-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.business {
+    max-width: 380px; 
+}
+
+.business-info-h2{
+    font-size: 27px;
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+.business-info-h2-2{
+    font-size: 27px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.business-info-p{
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.business-info-btn{
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #006dc0;
+    cursor: pointer;
+}
+
+.business-info-btn:hover{
+    text-decoration: underline;
+}
+
+.low-slider-container {
+    position: relative;
+    overflow: hidden; 
+    width: 83%;
+    margin: 0 auto; 
+    margin-top: 60px;
+}
+
+.low-slider {
+    display: flex;
+    width: 200%; 
+    transition: transform 0.9s ease; 
+}
+
+.low-slide img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+.low-slide-first {
+    transform: translateX(0%);
+}
+
+.low-slide-second {
+    transform: translateX(100%);
+}
+
+.low-text-overlay {
+    color: white;
+    position: absolute;
+    left: 63%;
+    top: 33%;
+}
+
+.low-text-overlay1 {
+    position: absolute;
+    left: 11%;
+    top: 32%;
+}
+
+.future, .african {
+    font-size: 32px;
+}
+
+.learn, .stories {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.low-btn, .low-btn1 {
+    position: absolute;
+    left: 0%;
+    top: 120%;
+    width: 190px;
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background: #0067b8;
+    border: none;
+    cursor: pointer;
+}
+
+.low-btn:hover, .low-btn1:hover {
+    background: #00599c;
+}
+
+.follow{
+    display: flex;
+    align-items: center;
+    margin-left: 8.5%;
+    gap: 20px;
+    margin-top: 60px;
+}
+
+.contact{
+    width: 35px;
+    height: 35px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    width: 100%;
+    height: 400px;
+    background-color: #eeeded;
+    margin-top: 120px;
+}
+
+.footer-whats-new h2,
+.footer-microsoft-store h2, 
+.footer-education h2, 
+.footer-business h2,
+.footer-developer-it h2,
+.footer-company h2{
+    margin-bottom: 13px;
+    font-size: 15px;
+    color: #3b3b3b;
+}
+
+.footer-whats-new p,
+.footer-microsoft-store p, 
+.footer-education p, 
+.footer-business p,
+.footer-developer-it p,
+.footer-company p{
+    margin-top: 13px;
+    font-size: 11px;
+    color: #3b3b3b;
+}

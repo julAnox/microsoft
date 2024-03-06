@@ -448,3 +448,8 @@ span {
     font-size: 11px;
     color: #3b3b3b;
 }
+
+.footer p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
